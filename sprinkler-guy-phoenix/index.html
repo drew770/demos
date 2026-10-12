@@ -86,11 +86,18 @@ footer{background:#07130e;color:#9ca3af;padding:60px 0 100px;font-size:15px}
 .claim{margin-top:26px;width:100%;justify-content:center}.cz small{display:block;color:#9ca3af;margin-top:10px;text-align:center}
 .reset{background:none;border:0;color:#6b7280;text-decoration:underline;cursor:pointer;margin-top:12px;width:100%}
 @media(max-width:860px){.links{display:none}.split,.area,.cbox,.fgrid{grid-template-columns:1fr}section{padding:70px 0}.mcall{display:flex}.cz-label{display:none}.hero{min-height:80vh}.slide{padding:30px 22px}.row2{grid-template-columns:1fr}.map{height:300px}nav .btn{display:none}}
+.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px;max-width:860px;margin:50px auto 0}
+.price{text-align:center;padding:40px 32px}.price .amt{font-size:52px;font-weight:800;margin:10px 0 2px}.price .amt small{font-size:18px;color:#6b7280;font-weight:600}
+.price .note{color:#6b7280;min-height:24px}.price ul{list-style:none;text-align:left;margin:24px 0}.price li{padding:7px 0 7px 30px;position:relative;color:#374151}
+.price li:before{content:"✓";position:absolute;left:0;color:var(--p);font-weight:900}.price .btn{width:100%;justify-content:center}
+.price.best{border:2px solid var(--p);transform:scale(1.03)}.price.best:before{transform:scaleX(1)}
+.ribbon{position:absolute;top:18px;right:-34px;transform:rotate(45deg);background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;font-size:12px;font-weight:800;padding:5px 40px;letter-spacing:.06em}
+.save{display:inline-block;background:#fef3c7;color:#92400e;font-weight:700;font-size:13px;border-radius:999px;padding:4px 12px;margin-top:6px}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<div class="banner">✨ Demo site built for <b>Sprinkler Guy</b> by <b>R&amp;R Development</b>. Tap the 🎨 button to customize it.</div>
+<div class="banner">✨ Demo site built for <b>Sprinkler Guy</b> by <a href="https://rnrdev.com" target="_blank" rel="noopener" style="color:#fff;font-weight:700">R&amp;R Development</a>. Tap the 🎨 button to customize it.</div>
 <nav><div class="wrap">
 <a class="logo" href="#top"><i class="grad">💧</i><span>Sprinkler Guy</span></a>
 <div class="links"><a href="#services">Services</a><a href="#why">Why Us</a><a href="#reviews">Reviews</a><a href="#area">Service Area</a><a href="#contact">Contact</a></div>
@@ -132,6 +139,17 @@ footer{background:#07130e;color:#9ca3af;padding:60px 0 100px;font-size:15px}
 <div class="map reveal"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=2506+E+Waltann+Ln,+Phoenix,+AZ+85032&z=11&output=embed" title="Service area map"></iframe></div>
 </div></section>
 
+<section id="pricing"><div class="wrap">
+<div class="center reveal"><div class="eyebrow">Claim your website</div><h2 class="sh">Make this site yours</h2><p class="sub">Pick a plan and we'll launch it with your changes, on your own domain.</p></div>
+<div class="prices">
+<div class="card price reveal"><h3>Monthly</h3><div class="amt">$19.97<small>/mo</small></div><div class="note">+ $97 one-time setup</div>
+<ul><li>Hosting included</li><li>Ongoing maintenance</li><li>Content edits when you need them</li><li>Connected to your domain</li></ul>
+<a class="btn btn-p" href="https://link.rnrdev.net/payment-link/6acd3a1a075ea22a20cddf88" target="_blank" rel="noopener">Start Monthly →</a></div>
+<div class="card price best reveal"><span class="ribbon">BEST VALUE</span><h3>12 Months Prepaid</h3><div class="amt">$250<small>/yr</small></div><div class="note">One payment covers your first 12 months<br><span class="save">Save $86.64 vs. $336.64 monthly</span></div>
+<ul><li>Hosting included</li><li>Ongoing maintenance</li><li>Content edits when you need them</li><li>Connected to your domain</li></ul>
+<a class="btn btn-p" href="https://link.rnrdev.net/payment-link/6acd39f9c0e70c7fefb7419a" target="_blank" rel="noopener">Prepay &amp; Save →</a></div>
+</div></div></section>
+
 <section class="contact" id="contact"><div class="wrap cbox">
 <div class="cinfo reveal"><div class="eyebrow" style="color:#fff;opacity:.8">Contact</div><h2 class="sh">Get your free quote today</h2><p style="opacity:.9;font-size:18px">Tell us what's going on and Roland will get back to you fast.</p>
 <a href="tel:+16025697881"><i>📞</i>(602) 569-7881</a><a href="mailto:sprinklerguyaz@gmail.com"><i>✉️</i>sprinklerguyaz@gmail.com</a><a href="#area"><i>📍</i>2506 E Waltann Ln, Phoenix, AZ 85032</a></div>
@@ -147,7 +165,7 @@ footer{background:#07130e;color:#9ca3af;padding:60px 0 100px;font-size:15px}
 <div><a class="logo" href="#top" style="color:#fff"><i class="grad">💧</i>Sprinkler Guy</a><p style="margin-top:14px;max-width:340px">Sprinkler repair and irrigation for Phoenix homes since 1994. Owner-operated by Roland Nelson.</p></div>
 <div><h4>Explore</h4><a href="#services">Services</a><a href="#why">Why Us</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
 <div><h4>Contact</h4><a href="tel:+16025697881">(602) 569-7881</a><a href="mailto:sprinklerguyaz@gmail.com">sprinklerguyaz@gmail.com</a><a>2506 E Waltann Ln, Phoenix, AZ 85032</a></div>
-</div><div class="copy">© <span id="yr"></span> Sprinkler Guy. Demo website designed by R&amp;R Development · rnrdev.com</div></div></footer>
+</div><div class="copy">© <span id="yr"></span> Sprinkler Guy. Website by <a href="https://rnrdev.com" target="_blank" rel="noopener" style="display:inline;color:#fff">R&amp;R Development</a></div></div></footer>
 
 <a class="btn btn-p mcall" href="tel:+16025697881">📞 Call (602) 569-7881</a>
 <span class="cz-label">🎨 Customize your site</span>
@@ -159,13 +177,13 @@ footer{background:#07130e;color:#9ca3af;padding:60px 0 100px;font-size:15px}
 <h5>Headline</h5><input id="inH"><h5>Tagline</h5><textarea id="inT" rows="2"></textarea>
 <h5>Hero image</h5><div class="imgs" id="imgs"></div>
 <h5>Font style</h5><div class="fonts" id="fonts"></div>
-<a class="btn btn-p claim" id="claim" href="#claim">💚 Love it? Claim this site for $1,000</a>
-<small>Includes your edits, real photos &amp; reviews, your own domain, and launch.</small>
+<a class="btn btn-p claim" id="claim" href="#pricing">💚 Love it? Claim this site from $97 + $19.97/mo</a>
+<small>Or prepay 12 months for $250. See plans below.</small>
 <button class="reset" id="reset">Reset to original</button>
 </aside>
 
 <script>
-const PAYMENT_LINK = '#claim';
+const PAYMENT_LINK = '#pricing';
 const KEY='demo-sprinkler-guy-phoenix';
 const DEF={p:'#16a34a',p2:'#0ea5e9',h:document.getElementById('headline').textContent,t:document.getElementById('tagline').textContent,img:0,font:0};
 const THEMES=[['Fresh Green','#16a34a','#0ea5e9'],['Desert Sunset','#ea580c','#db2777'],['Ocean Blue','#2563eb','#06b6d4'],['Royal','#7c3aed','#2563eb'],['Midnight Gold','#b45309','#facc15']];
@@ -184,7 +202,7 @@ $('pick').oninput=e=>{S.p=e.target.value;S.p2=e.target.value;apply()};
 $('inH').oninput=e=>{S.h=e.target.value;apply()};$('inT').oninput=e=>{S.t=e.target.value;apply()};
 $('reset').onclick=()=>{S=Object.assign({},DEF);apply()};
 $('czOpen').onclick=()=>$('cz').classList.add('open');$('czClose').onclick=()=>$('cz').classList.remove('open');
-$('claim').href=PAYMENT_LINK;
+$('claim').href=PAYMENT_LINK;$('claim').onclick=()=>$('cz').classList.remove('open');
 apply();
 // reveal + counters
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('[data-count]').forEach(c=>{let n=0,T=+c.dataset.count;const s=setInterval(()=>{n+=Math.ceil(T/40);if(n>=T){n=T;clearInterval(s)}c.textContent=n+'+'},30)});io.unobserve(e.target)}}),{threshold:.15});
